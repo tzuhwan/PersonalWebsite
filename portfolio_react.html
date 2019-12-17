@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TzuHwan Seet</title>
+    <script src="https://kit.fontawesome.com/4e98fca5ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="portfolio.css">
+    <title>TzuHwan Seet</title>
+  </head>
+  <body>
+
+    <header class="react-header">
+      <div class="top-nav">
+        <div class="logo">
+          <a href="index.html" class="nav-link">TzuHwan Seet</a>
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#portfolio" class="nav-link">Work</a></li>
+          <li><a href="https://drive.google.com/file/d/1ls9sEweKY-SPpkUDBvCTzi_8wRmFyAob/view?usp=sharing" class="nav-link">Resume</a></li>
+        </ul>
+      </div>
+
+      <div class="landing-text" id="react-landing-text">
+        <h1>Fellini's Pizzeria</h1>
+        <h1>Filter Page</h1>
+        <h6>React App Development</h6>
+      </div>
+    </header>
+
+    <section class="intro">
+      <div class="brief">
+        <h1>Brief</h1>
+        <p>The goal of this project was to build my own live filtering page based on appropriate design heuristics. Wanting to create something personally meaningful and useful, I decided to go with the Pizza place that's close to many Brown students' hearts - Fellini's Pizzeria down on Wickendown Street. As great as its pizzas are, the pizzeria unfortunately does not present the ingredients and toppings of its pizzas clearly on the menu in its restaurant, making dietary selection tricky at times. I am particularly excited about this project, as it will be my very first time exploring the React library, knowing how powerful it is.</p>
+      </div>
+    </section>
+
+    <section class="ideation">
+      <div class="section-heading">
+        <h1>Ideation and Wireframing</h1>
+      </div>
+      <p>To maximise the usability of the web page, my priority was to keep its components simple. After discussing with my peers and completing a competitive analysis of well-designed websites like YouTube, Amazon and Netflix, I decided on the following design choices:</p>
+      <ol class=intro-list>
+        <li class=intro-point>Using a card layout to contain the information of each pizza item.</li>
+        <li class=intro-point>Making the user filter selection explicit and reversible, ie. the user can clear the filter if desired.</li>
+        <li class=intro-point>Adding a price sorting function.</li>
+      </ol>
+      <h6>Initial Wireframing</h6>
+      <div class="ideation-img">
+        <div class="img-container">
+          <img src="library/react_wireframe_1.png" id="react-desktop" alt="">
+          <p id="desktop-p">Desktop view</p>
+        </div>
+        <div class="img-container">
+          <img src="library/react_wireframe_2.png" id="react-mobile" alt="">
+          <p id="mobile-p">Mobile view</p>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <section class="design">
+      <div class="section-heading">
+        <h1>Design</h1>
+      </div>
+      <p>Sticking to the initial design goals, I kept the layout simple and alllowed the user to switch between filters using radio buttons. I also want to provide more pizza ingredient details to the user, so I created a hover effect that converts the images into recipe text in real-time.</p>
+
+      <video class="react-video" controls>
+        <source src="library/react_video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+
+      <h6>Challenges</h6>
+      <p>I initially found it challenging to pass multiple filtering functions to the same Component that holds my pizza array, but managed to get it to work using Javascript built-in map() and filter() functions.</p>
+
+    </section>
+
+    <section class="redesign">
+      <div class="section-heading">
+        <h1>Redesign</h1>
+      </div>
+      <p>After receiving some peer critiques, I would like to implement a couple of changes to make the interface more usable:</p>
+      <ol>
+        <li>Creating a drop-down menu for each filters, so that more space can be dedicated to the main pizza container.</li>
+        <li>Implementing an F-layout, such that the filters are presented in a side bar so that the user doesn't have to scroll back up to change filter settings.</li>
+      </ol>
+    </section>
+
+    <section class="reflection">
+      <div class="section-heading">
+        <h1>Reflection</h1>
+      </div>
+      <p>Overall, I really enjoyed the process of coding in React. It not only makes my application fast, responsive and user-friendly, but also so much easier to maintain over time. I am excited to build more layers unto this project and explore React for mobile app development.</p>
+
+      <p>To view the code for my project, please check out my <a class="text-link" href="https://github.com/tzuhwan">GitHub profile</a>.</p>
+
+    </section>
+
+
+    <footer class="copyright">
+      <div class="up" id="up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <p>&copy; 2019 TzuHwan Seet</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
