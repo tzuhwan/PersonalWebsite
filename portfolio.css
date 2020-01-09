@@ -113,12 +113,7 @@ li {
   text-decoration: underline;
 }
 
-/* #about-link {
-  display: block;
-  position: relative;
-  top: -250px;
 
-} */
 /* end global */
 
 /* start reusable */
@@ -179,7 +174,6 @@ li {
 .nav-link:hover,
 .nav-link:focus {
   color: #00008b;
-  /* text-decoration: underline; */
 }
 
 .landing-text {
@@ -235,10 +229,11 @@ section {
   padding: 3rem 0;
   margin: 0 auto;
   margin-bottom: 3rem;
-  width: 70%;
+  width: 60%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+
 }
 
 .section-heading h1{
@@ -318,6 +313,11 @@ section {
   color: #FFF;
 }
 
+.react-header .nav-link:hover,
+.react-header .nav-link:focus {
+  color: #61DBFB;
+}
+
 
 
 /* end react-header */
@@ -336,7 +336,13 @@ section {
 
 .globe-header h6 {
   opacity: 1;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 400;
+  transform: translateY(-2rem);
+}
+
+#globe-landing-text {
+  margin-top: 4.5rem;
 }
 
 /* end globe-header */
@@ -391,7 +397,8 @@ section {
 #globe-wire {
   width: 20rem;
   height: auto;
-  margin: 2rem;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 
 .globe-research span {
@@ -439,7 +446,6 @@ section {
   text-align:center;
   margin-right: 17rem;
 }
-
 
 
 #react-desktop {
@@ -633,3 +639,334 @@ section {
 }
 
 /* end animation */
+
+
+
+/* media queries for tablet */
+
+@media only screen and (max-width: 768px) {
+
+  .mental-img img {
+    width: 50%;
+    height: auto;
+  }
+
+  #persona-img {
+    width: 50%;
+    height: auto;
+  }
+
+  #storyboard-img {
+    width: 50%;
+    height: auto;
+  }
+
+  .landing-text h1 {
+    font-size: 3rem;
+  }
+
+  .landing-text h6 {
+    font-size: 2rem;
+  }
+
+  .landing-text {
+    top: 30%;
+  }
+
+  .top-nav {
+
+  }
+
+  .logo a {
+    font-size: 2rem;
+  }
+
+  .nav-list a {
+    font-size: 1.5rem;
+  }
+
+  .intro{
+    margin: 0 auto;
+  }
+
+  header {
+    height: 50vh;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  #react-landing-text h1{
+    font-size: 4rem;
+    color: #FFF;
+  }
+
+  .img-container p {
+    text-align:center;
+    margin-right: 17rem;
+    width: 70%;
+  }
+
+  #mobile-p{
+    width: 50%;
+  }
+
+
+  .react-video {
+    width: 70%;
+    margin: 2rem auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+
+  .globe-header {
+    height: 300px;
+  }
+
+  #globe-landing-text {
+    margin-top: 6rem;
+  }
+
+  .globe-img {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  #globe-wire {
+    width: 10rem;
+  }
+
+  #globe-prototype {
+    width: 10rem;
+  }
+
+
+  #epic-landing-text {
+    margin-top: 2rem;
+  }
+
+  .epic-intro {
+    margin-top: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin: 0 .2rem;
+  }
+
+  section {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: -1rem;
+  }
+
+  .logo {
+    margin-left: .5rem;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .nav-list {
+    margin-left: 8rem;
+  }
+
+  .nav-list a {
+    font-size: 1.2rem;
+    padding: 0;
+    margin-right: 0;
+  }
+
+  #react-link {
+    font-weight: 700;
+  }
+
+  .landing-text {
+    margin-top: 2rem;
+  }
+
+  .landing-text h1 {
+    font-size: 3rem;
+  }
+
+  .landing-text h6 {
+    margin-top: -2rem;
+    font-size: 1.5rem;
+  }
+
+  #personaintro-img {
+    width: 60%;
+    height: auto;
+  }
+
+  .intro {
+    margin-top: 2rem;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+    margin-bottom: -1rem;
+  }
+
+  .content-item {
+
+    width: 100%;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+  }
+
+
+  .container {
+    width: 100%;
+    padding-top:0;
+    margin-top: 0;
+  }
+
+  .content-description h6 {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+
+  section h6 {
+    font-size: 1.5rem;
+  }
+
+  .content-description h1 {
+    font-size: 2rem;
+  }
+
+  .content-item {
+    padding-top: 0;
+
+  }
+
+  .mental-img {
+    text-align: center;
+  }
+
+  .mental-img img {
+    margin: 1rem;
+  }
+
+
+  #persona-img {
+    width: 100%;
+    height: auto;
+  }
+
+  #storyboard-img {
+    width: 80%;
+    height: auto;
+  }
+
+  #react-landing-text {
+    margin-top: 14rem;
+  }
+
+  #react-landing-text h1 {
+    font-size: 3rem;
+  }
+
+  .intro {
+    margin-top: 0;
+  }
+
+
+  .section-heading h1 {
+    font-size: 2rem;
+  }
+
+  .img-container {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .img-container img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .img-container p {
+    text-align:center;
+    width: 100%;
+  }
+
+  #mobile-p{
+    width: 100%;
+  }
+
+  .ideation-img {
+    flex-direction: column;
+  }
+
+
+  .section-heading {
+    padding: 0;
+  }
+
+  .react-header {
+    height: 300px;
+  }
+
+  .globe-header .nav-list {
+    transform:translateY(-1rem);
+  }
+
+  .globe-header .landing-text h6{
+    display: none;
+    margin-top: .8rem;
+  }
+
+  .globe-intro-img p {
+    font-size: 1rem;
+  }
+
+
+
+  #globe-wire {
+    width: 7rem;
+    height: auto;
+    padding: .5rem;
+  }
+
+  #globe-prototype {
+    width: 7rem;
+    height: auto;
+    padding: .5rem;
+  }
+
+  #epic-img {
+    width: 70%;
+    height: auto;
+  }
+
+  #build-img {
+    width: 80%;
+    height: auto;
+  }
+
+
+
+
+
+}
